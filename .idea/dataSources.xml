@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="twitter" uuid="00b402fd-39b9-4f76-b42e-aed204a0dd79">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\jcman\PycharmProjects\DataAISimplistic\backend\app\twitter.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
