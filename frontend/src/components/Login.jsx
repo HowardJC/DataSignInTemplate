@@ -54,7 +54,7 @@ class Login extends Component {
                             <button type="submit" class="w3-button w3-blue">
                                 Login
                             </button>
-                            {this.state.register && <p>You're logged in!</p>}
+                            {this.state.login && <p>You're checked into club!</p>}
                         </p>
                     </form>
                 </div>
