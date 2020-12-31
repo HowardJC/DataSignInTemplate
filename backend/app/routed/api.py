@@ -43,7 +43,6 @@ def login():
         password = request.json["pwd"]
         if (email and password):
             users = getUsers()
-            # Check if user exists
             return jsonify(len(list(filter(lambda x: x["email"] == email and x["password"] == password, users))) == 1)
         else:
             return jsonify({"error": "Invalid form"})
@@ -57,11 +56,9 @@ def register():
         email = email.lower()
         password = request.json["pwd"]
         username = request.json["username"].lower()
-        # Check to see if user already exists
         users = getUsers()
         if(len(list(filter(lambda x: x["email"] == email, users))) == 1):
             return jsonify({"error": "Invalid form since user exists"})
-        # Email validation check
         if not re.match(r"[\w\._]{5,}@\w{3,}.\w{2,4}", email):
             return jsonify({"error": "Invalid form"})
         addUser(username, email, password)
