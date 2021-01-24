@@ -1,2 +1,2 @@
-Basic website example done for alternative sign in during officier meeting of club done in react frontend and flask backend
+Very barebones skeleton of a website example we can use for club a few years back
  
